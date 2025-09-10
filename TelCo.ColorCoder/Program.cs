@@ -39,11 +39,11 @@ namespace TelCo.ColorCoder
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            ColorCoderService.AssertPairNumber(4, Color.White, Color.Brown, colorMapMajor, colorMapMinor);
-            ColorCoderService.AssertPairNumber(5, Color.White, Color.SlateGray, colorMapMajor, colorMapMinor);
-            ColorCoderService.AssertPairNumber(23, Color.Violet, Color.Green, colorMapMajor, colorMapMinor);
-            ColorCoderService.AssertColorToPairNumber(Color.Yellow, Color.Green, 18, colorMapMajor, colorMapMinor);
-            ColorCoderService.AssertColorToPairNumber(Color.Red, Color.Blue, 6, colorMapMajor, colorMapMinor);
+            AssertService.AssertPairNumber(4, Color.White, Color.Brown, colorMapMajor, colorMapMinor);
+            AssertService.AssertPairNumber(5, Color.White, Color.SlateGray, colorMapMajor, colorMapMinor);
+            AssertService.AssertPairNumber(23, Color.Violet, Color.Green, colorMapMajor, colorMapMinor);
+            AssertService.AssertColorToPairNumber(Color.Yellow, Color.Green, 18, colorMapMajor, colorMapMinor);
+            AssertService.AssertColorToPairNumber(Color.Red, Color.Blue, 6, colorMapMajor, colorMapMinor);
         }
     }
 }
